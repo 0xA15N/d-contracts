@@ -35,7 +35,7 @@ interface IRegistrar is IERC721Enumerable {
     function renew(uint256 id, uint256 duration) external returns (uint256);
 
     /**
-     * @dev Reclaim ownership of a name in FNS, if you own it in the registrar.
+     * @dev Reclaim ownership of a name in MNS, if you own it in the registrar.
      */
     function reclaim(uint256 id, address owner) external;
 }
