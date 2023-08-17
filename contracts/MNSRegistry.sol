@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.17;
 
-import "./interfaces/FNS.sol";
+import "./interfaces/MNS.sol";
 
 /**
- * The FNS registry contract.
+ * The MNS registry contract.
  */
-contract FNSRegistry is FNS {
+contract MNSRegistry is MNS {
     struct Record {
         address owner;
         address resolver;
@@ -24,7 +24,7 @@ contract FNSRegistry is FNS {
     }
 
     /**
-     * @dev Constructs a new FNS registry.
+     * @dev Constructs a new MNS registry.
      */
     constructor() {
         records[0x0].owner = msg.sender;
@@ -124,7 +124,7 @@ contract FNSRegistry is FNS {
 
     /**
      * @dev Enable or disable approval for a third party ("operator") to manage
-     *  all of `msg.sender`'s FNS records. Emits the ApprovalForAll event.
+     *  all of `msg.sender`'s MNS records. Emits the ApprovalForAll event.
      * @param operator Address to add to the set of authorized operators.
      * @param approved True if the operator is approved, false to revoke approval.
      */
