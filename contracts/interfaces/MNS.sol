@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >=0.8.17;
 
-interface FNS {
+interface MNS {
     // Logged when the owner of a node assigns a new owner to a subnode.
     event NewOwner(bytes32 indexed node, bytes32 indexed label, address owner);
 
